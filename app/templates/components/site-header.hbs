@@ -1,0 +1,12 @@
+{{#link-to 'index'}}
+    Site name
+{{/link-to}}
+
+
+<ul class="header__menu">
+  {{#each menuItems as |item|}}
+    <li>{{link-to item.title item.link}}</li>
+  {{/each}}
+</ul>
+
+{{yield}}
