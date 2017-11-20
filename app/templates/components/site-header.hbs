@@ -1,12 +1,7 @@
-{{#link-to 'index'}}
-    Site name
-{{/link-to}}
+<header class="header">
+  <div class="center-wrapper">
+    {{ header/site-logo }}
 
-
-<ul class="header__menu">
-  {{#each menuItems as |item|}}
-    <li>{{link-to item.title item.link}}</li>
-  {{/each}}
-</ul>
-
-{{yield}}
+    {{ header/site-nav }}
+  </div>
+</header>

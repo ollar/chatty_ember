@@ -331,23 +331,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/styles/app.scss",
-			"settings":
-			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/components/_vars.scss",
-			"settings":
-			{
-				"buffer_size": 0,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -415,15 +398,24 @@
 	[
 		"/Users/ollar/Documents/dev/chatty",
 		"/Users/ollar/Documents/dev/chatty/app",
-		"/Users/ollar/Documents/dev/chatty/app/styles",
-		"/Users/ollar/Documents/dev/chatty/app/styles/components",
-		"/Users/ollar/Documents/dev/chatty/app/templates"
+		"/Users/ollar/Documents/dev/chatty/app/components",
+		"/Users/ollar/Documents/dev/chatty/app/templates",
+		"/Users/ollar/Documents/dev/chatty/app/templates/components"
 	],
 	"file_history":
 	[
-		"/Users/ollar/Documents/dev/chatty/package.json",
-		"/Users/ollar/Documents/dev/chatty/app/templates/application.hbs",
+		"/Users/ollar/Documents/dev/chatty/app/components/site-header.js",
+		"/Users/ollar/Documents/dev/chatty/app/templates/components/site-footer.hbs",
 		"/Users/ollar/Documents/dev/chatty/app/styles/app.scss",
+		"/Users/ollar/Documents/dev/chatty/app/templates/index.hbs",
+		"/Users/ollar/Documents/dev/chatty/app/templates/components/site-header.hbs",
+		"/Users/ollar/Documents/dev/chatty/app/components/site-footer.js",
+		"/Users/ollar/Documents/dev/chatty/app/styles/components/_base.scss",
+		"/Users/ollar/Documents/dev/chatty/app/styles/_mixins.scss",
+		"/Users/ollar/Documents/dev/chatty/app/templates/application.hbs",
+		"/Users/ollar/Documents/dev/chatty/chatty.sublime-project",
+		"/Users/ollar/Documents/dev/chatty/app/styles/_vars.scss",
+		"/Users/ollar/Documents/dev/chatty/package.json",
 		"/Users/ollar/Documents/dev/chatty_dja/main/urls.py",
 		"/Users/ollar/Documents/dev/chatty_dja/chatty/settings.py",
 		"/Users/ollar/Documents/dev/chatty_dja/chatty/templates/home.html",
@@ -539,16 +531,7 @@
 		"/Users/ollar/Documents/dev/todolist/todo.sublime-project",
 		"/Users/ollar/Documents/dev/todolist/src/index.js",
 		"/Users/ollar/Documents/dev/todolist/app/templates/application.hbs",
-		"/Users/ollar/Documents/dev/lock/main.py",
-		"/Users/ollar/Documents/dev/bsscrawler/main.py",
-		"/Users/ollar/Documents/dev/bsscrawler/.gitignore",
-		"/Users/ollar/Documents/dev/aio/app/main.py",
-		"/Users/ollar/Documents/dev/aio/requirments.txt",
-		"/Users/ollar/Documents/dev/aio/app/templates/index.html",
-		"/Users/ollar/Documents/dev/aio/docker-compose.yml",
-		"/Users/ollar/Documents/dev/aio/pythonDockerfile",
-		"/Users/ollar/Documents/dev/aio/app/views.py",
-		"/Users/ollar/Documents/dev/aio/app/templates/home.html"
+		"/Users/ollar/Documents/dev/lock/main.py"
 	],
 	"find":
 	{
@@ -583,74 +566,14 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/styles/app.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 45,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/styles/components/_vars.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"open_with_edit": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -696,6 +619,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"sitefooe",
+				"app/components/site-footer.js"
+			],
+			[
+				"site",
+				"app/templates/components/site-footer.hbs"
+			],
 			[
 				"paymb",
 				"src/actions/payments/paymentBudgetActions.js"
@@ -1109,10 +1040,6 @@
 				"app/routes/application.js"
 			],
 			[
-				"site",
-				"app/components/site-header.js"
-			],
-			[
 				"head",
 				"app/templates/components/site-header.hbs"
 			],
@@ -1203,10 +1130,6 @@
 			[
 				"tempro",
 				"app/templates/products.hbs"
-			],
-			[
-				"tempcate",
-				"app/templates/categories.hbs"
 			]
 		],
 		"width": 0.0
