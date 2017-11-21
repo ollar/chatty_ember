@@ -1,0 +1,25 @@
+.try-for-free {
+  text-align: center;
+
+  sup{
+    cursor: pointer;
+  }
+
+  .center-wrapper {
+    display: inline-block;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1;
+
+    @include sm() {
+      font-size: 4.5rem;
+    }
+
+    @include md() {
+      font-size: 6rem;
+    }
+  }
+}

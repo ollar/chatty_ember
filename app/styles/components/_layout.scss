@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+}
+
+body > .ember-view{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  // background-color: red;
+
+  .center-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+  }
+
+  @include sm() {
+    // background-color: blue;
+
+    .center-wrapper {
+      height: 4.5rem;
+    }
+  }
+}
+
+.container {
+  margin-bottom: auto;
+}
+
+.center-wrapper {
+  @include center-wrapper;
+}
+
+.footer{
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+// =============================================================================
+
+.try-for-free {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+
+  @include sm() {
+    height: 21rem;
+  }
+
+  @include md() {
+    height: 27rem;
+  }
+}
