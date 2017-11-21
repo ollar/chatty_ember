@@ -15,7 +15,7 @@ export default {
         one_panel: 'One panel to rule them all',
         alice_granny: 'ALICE is my granny',
         easy_to_expand: 'Easy to Expand',
-        no_card_required: 'No credit card required',
+        free: 'No credit card required',
       },
       content: {
         aws_content: 'Amazon Web Services power guarantees your bots will always be alive and ready for action.',
@@ -25,7 +25,7 @@ export default {
         free: 'You can calmly grow up your bot baby without worrying about the money. Happy bots will build our future.',
       }
     },
-    should_try_slogan: `No doubt, you should {{link}}<sup title="it\'s free">*</sup>`
+    should_try_slogan: `No doubt, you should {{link}}<sup title="it's free">*</sup>`
   },
   form: {
     email: {
