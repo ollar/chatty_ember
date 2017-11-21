@@ -35,6 +35,13 @@ body > .ember-view{
   @include center-wrapper;
 }
 
+.center-fluid-wrapper {
+  @extend .center-wrapper;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer{
   line-height: 1.5rem;
   text-align: center;

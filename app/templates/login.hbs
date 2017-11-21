@@ -1,1 +1,25 @@
-{{outlet}}
+<div class="center-fluid-wrapper">
+  <form class="center-form" onsubmit={{action 'onsubmit'}}>
+    <h2 class="title">
+      {{t 'login.title'}}
+    </h2>
+
+    <div class="row">
+      <label for="email">
+        {{t 'form.email.label'}}
+      </label>
+      <input type="email" name="email" id="email" placeholder={{t 'form.email.placeholder'}}>
+    </div>
+
+    <div class="row">
+      <label for="password">
+        {{t 'form.password.label'}}
+      </label>
+      <input type="password" name="password" id="password" placeholder={{t 'form.password.placeholder'}}>
+    </div>
+
+    <div class="row buttons-wrapper">
+      <button type="submit">{{t 'login.form.button.submit'}}</button>
+    </div>
+  </form>
+</div>

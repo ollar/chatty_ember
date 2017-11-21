@@ -64,6 +64,8 @@ select {
   box-shadow: none;
   box-sizing: border-box;
   appearance: none;
+  width: 100%;
+  display: block;
   margin-bottom: 0.5rem;
 
   &:focus {
@@ -99,4 +101,10 @@ label > .label-body {
 
 .row {
   margin-bottom: 1.5rem;
+}
+
+.center-form {
+  min-width: 280px;
+  width: 100%;
+  max-width: 300px;
 }

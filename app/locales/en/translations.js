@@ -27,24 +27,38 @@ export default {
     },
     should_try_slogan: `No doubt, you should {{link}}<sup title="it\'s free">*</sup>`
   },
+  form: {
+    email: {
+      label: 'Email',
+      placeholder: 'Email',
+    },
+    password: {
+      label: 'Password',
+      placeholder: 'Password',
+    },
+    password_repeat: {
+      label: 'Repeat Password',
+      placeholder: 'Repeat Password',
+    },
+    button: {
+      submit: 'Submit',
+      cancel: 'Cancel',
+    },
+  },
   register: {
     title: 'Register',
     form: {
-      email: {
-        label: 'Email',
-        placeholder: 'Email',
-      },
-      password: {
-        label: 'Password',
-        placeholder: 'Password',
-      },
-      password_repeat: {
-        label: 'Repeat Password',
-        placeholder: 'Repeat Password',
-      },
       button: {
-        submit: 'Submit',
+        submit: 'Sign up',
       },
     }
-  }
+  },
+  login: {
+    title: 'Login',
+    form: {
+      button: {
+        submit: 'Sign in',
+      },
+    },
+  },
 };
