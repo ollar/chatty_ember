@@ -9,7 +9,6 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('login');
   this.route('register');
-  this.mount('admin-panel', {path: '/app'});
 });
 
 export default Router;
