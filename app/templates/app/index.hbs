@@ -1,1 +1,22 @@
-{{outlet}}
+<div class="center-wrapper">
+  <div class="block bots-statuses">
+    <h2 class="title">{{t 'app.index.status.title'}}</h2>
+
+    <ul class="list">
+      <li>
+        hello status
+      </li>
+    </ul>
+  </div>
+
+  <div class="block bots-list">
+    <h2 class="title">{{t 'app.index.list.title'}}</h2>
+    <ul class="list">
+      {{#each bots as |bot|}}
+        {{bot-list-item data=bot}}
+      {{/each}}
+    </ul>
+  </div>
+
+  {{outlet}}
+</div>

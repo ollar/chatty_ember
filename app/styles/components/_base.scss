@@ -92,4 +92,8 @@ a {
   &:visited {
     color: adjust-hue(map-get($colours, blue), -10deg);
   }
+
+  &.attention-link {
+    color: map-get($colours, red);
+  }
 }

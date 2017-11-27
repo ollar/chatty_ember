@@ -1,1 +1,37 @@
-{{outlet}}
+<div class="center-wrapper">
+  <form onsubmit={{action 'handlesubmit'}}>
+    <h2 class="title">
+      {{t 'settings.title'}}
+    </h2>
+
+    <div class="row">
+      <label for="photo hidden">
+        {{t 'form.photo.label'}}
+      </label>
+      photo here
+    </div>
+
+    <div class="row">
+      <label for="username">
+        {{t 'form.username.label'}}
+      </label>
+      <input type="text" name="username" id="username" placeholder={{t 'form.username.placeholder'}}>
+    </div>
+
+    <div class="row">
+      <label for="email">
+        {{t 'form.email.label'}}
+      </label>
+      <input type="email" name="email" id="email" placeholder={{t 'form.email.placeholder'}}>
+    </div>
+
+    <div class="row">
+      {{link-to (t 'settings.reset_password') 'app.reset-password' class="attention-link"}}
+    </div>
+
+    <div class="row buttons-wrapper">
+      <button type="submit">{{t 'form.button.save'}}</button>
+      <button type="button">{{t 'form.button.cancel'}}</button>
+    </div>
+  </form>
+</div>

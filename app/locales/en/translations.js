@@ -43,7 +43,15 @@ export default {
     button: {
       submit: 'Submit',
       cancel: 'Cancel',
+      save: 'Save',
     },
+    photo: {
+      label: 'Photo',
+    },
+    username: {
+      label: 'Username',
+      placeholder: 'Username',
+    }
   },
   register: {
     title: 'Register',
@@ -61,4 +69,18 @@ export default {
       },
     },
   },
+  app: {
+    index: {
+      status: {
+        title: 'Status board',
+      },
+      list: {
+        title: 'Your bots',
+      },
+    },
+  },
+  settings: {
+    title: 'Settings',
+    reset_password: 'Reset password',
+  }
 };

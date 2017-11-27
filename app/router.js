@@ -10,9 +10,12 @@ Router.map(function() {
   this.route('login');
   this.route('register');
   this.route('app', function() {
-    this.route('bots', function() {});
+    this.route('bots', function() {
+      this.route('settings');
+    });
     this.route('stats');
     this.route('settings');
+    this.route('reset-password');
   });
 });
 
