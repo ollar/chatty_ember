@@ -11,7 +11,8 @@ Router.map(function() {
   this.route('register');
   this.route('app', function() {
     this.route('bots', function() {
-      this.route('settings');
+      this.route('create');
+      this.route('settings', {path: '/:bot_id/settings'});
     });
     this.route('stats');
     this.route('settings');

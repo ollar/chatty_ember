@@ -28,4 +28,9 @@ export default function() {
   this.get('/bots', (schema, request) => {
     return schema.bots.all();
   });
+
+  this.get('/bots/:bot_id', (schema, request) => {
+    var bot_id = request.params.bot_id;
+    return schema.bots.find(bot_id);
+  });
 }

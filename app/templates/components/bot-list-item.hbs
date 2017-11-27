@@ -1,6 +1,8 @@
 <div class="logo">
-  <img srcset="{{data.logo}} 1x, {{data.logo}} 1.5x, {{data.logo}} 2x"
-    src={{data.logo}} width="50" height="50" alt="bot image">
+  {{#link-to 'app.bots.settings' data}}
+    <img srcset="{{data.logo}} 1x, {{data.logo}} 1.5x, {{data.logo}} 2x"
+      src={{data.logo}} width="50" height="50" alt="bot image">
+  {{/link-to}}
 </div>
 
 <div class="name">

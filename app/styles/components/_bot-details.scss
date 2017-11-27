@@ -1,0 +1,15 @@
+.bot-settings {
+  .logo-wrapper {
+    text-align: center;
+  }
+
+  .logo-detailed {
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+}
