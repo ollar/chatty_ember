@@ -1,0 +1,32 @@
+.bots-list {
+  .list {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.bot-list-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0.5rem;
+
+  .logo {
+    margin-right: 1em;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+
+  .name {
+    margin-right: auto;
+  }
+
+  &:hover {
+    .logo {
+      box-shadow: 0 0 0 3px map-get($colours, olive);
+    }
+  }
+}

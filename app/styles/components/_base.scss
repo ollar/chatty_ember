@@ -97,3 +97,20 @@ a {
     color: map-get($colours, red);
   }
 }
+
+// ===================================================================== Helpers
+
+.hidden {
+  font-size: 0.01px;
+  color: transparent;
+  height: 0.1px;
+  width: 0.1px;
+  margin: 0;
+  padding: 0;
+}
+
+// ======================================================================= Block
+
+.block {
+  margin: 0 0 3em;
+}
