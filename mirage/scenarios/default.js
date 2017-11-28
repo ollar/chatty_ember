@@ -9,4 +9,5 @@ export default function(server) {
 
 
   server.createList('bot', 10);
+  server.createList('category', 100);
 }

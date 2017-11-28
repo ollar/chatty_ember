@@ -33,4 +33,8 @@ export default function() {
     var bot_id = request.params.bot_id;
     return schema.bots.find(bot_id);
   });
+
+  this.get('/categories', (schema, request) => {
+    return schema.categories.all();
+  });
 }
