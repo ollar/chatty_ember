@@ -12,7 +12,7 @@ export default Factory.extend({
     return faker.date.between(this.created, faker.date.recent());
   },
   logo() {
-    return faker.image.abstract();
+    return faker.image.image();
   },
   telegram: false,
 });

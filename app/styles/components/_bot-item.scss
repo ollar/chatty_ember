@@ -24,6 +24,14 @@
     margin-right: auto;
   }
 
+  label {
+    margin: 0;
+
+    svg {
+      display: block;
+    }
+  }
+
   &:hover {
     .logo {
       box-shadow: 0 0 0 3px map-get($colours, olive);

@@ -11,8 +11,22 @@
 
 <div class="social-networks-connected">
   <div>
-    <label class="hidden" for="telegram_bot_{{data.id}}">telegram</label>
-    <input type="checkbox" name="telegram_bot_{{data.id}}" id="telegram_bot_{{data.id}}" checked={{data.telegram}}>
+    <label for={{telegramBotId}}>
+      <span class="hidden">
+        telegram
+      </span>
+      {{svg-icon name="telegram" colour=(if data.telegram "#0088cc" "#ccc") width="20" height="20"}}
+    </label>
+
+    <div class="hidden">
+      {{input
+        type="checkbox"
+        name=telegramBotId
+        id=telegramBotId
+        checked=data.telegram
+        change=(action 'toggleTelegram')
+      }}
+    </div>
   </div>
 </div>
 
