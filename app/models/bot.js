@@ -8,4 +8,5 @@ export default DS.Model.extend({
   logo: DS.attr('string'),
 
   telegram: DS.attr(),
+  whatsup: DS.attr(),
 });

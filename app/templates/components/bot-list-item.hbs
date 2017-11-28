@@ -1,9 +1,6 @@
-<div class="logo">
-  {{#link-to 'app.bots.settings' data}}
-    <img srcset="{{data.logo}} 1x, {{data.logo}} 1.5x, {{data.logo}} 2x"
-      src={{data.logo}} width="50" height="50" alt="bot image">
-  {{/link-to}}
-</div>
+{{#link-to 'app.bots.settings' data class="bot-details-link"}}
+  {{bot-logo data=data}}
+{{/link-to}}
 
 <div class="name">
   {{data.name}}
@@ -25,6 +22,25 @@
         id=telegramBotId
         checked=data.telegram
         change=(action 'toggleTelegram')
+      }}
+    </div>
+  </div>
+
+  <div>
+    <label for={{whatsupBotId}}>
+      <span class="hidden">
+        whatsup
+      </span>
+      {{svg-icon name="whatsup" colour=(if data.whatsup "#25D366" "#ccc") width="20" height="20"}}
+    </label>
+
+    <div class="hidden">
+      {{input
+        type="checkbox"
+        name=whatsupBotId
+        id=whatsupBotId
+        checked=data.whatsup
+        change=(action 'toggleWhatsup')
       }}
     </div>
   </div>

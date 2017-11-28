@@ -4,7 +4,9 @@ export default Factory.extend({
   name() {
     return `${faker.hacker.noun()} ${faker.hacker.verb()}`;
   },
-  enabled: true,
+  enabled() {
+    return faker.random.boolean();
+  },
   created() {
     return faker.date.past();
   },
@@ -12,7 +14,12 @@ export default Factory.extend({
     return faker.date.between(this.created, faker.date.recent());
   },
   logo() {
-    return faker.image.image();
+    return faker.random.boolean() ? faker.image.image() : '';
   },
-  telegram: false,
+  telegram() {
+    return faker.random.boolean();
+  },
+  whatsup() {
+    return faker.random.boolean();
+  },
 });

@@ -9,10 +9,19 @@ export default Component.extend({
     return 'telegram_bot_' + this.attrs.data.id;
   }),
 
+  whatsupBotId: computed(function() {
+    return 'whatsup_bot_' + this.attrs.data.id;
+  }),
+
   actions: {
     toggleTelegram(e) {
       e.preventDefault();
       this.toggleProperty('data.telegram')
+    },
+
+    toggleWhatsup(e) {
+      e.preventDefault();
+      this.toggleProperty('data.whatsup')
     }
   }
 });
