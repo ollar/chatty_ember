@@ -116,3 +116,21 @@ a {
 .block {
   margin: 0 0 3em;
 }
+
+// ==================================================================== Features
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+  justify-content: space-around;
+}
+
+// ==================================================================== Bot list
+
+.bots-list {
+  .list {
+    padding: 0;
+    margin: 0;
+  }
+}

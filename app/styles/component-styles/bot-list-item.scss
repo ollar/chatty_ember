@@ -1,0 +1,35 @@
+& {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0.5rem;
+
+  .bot-details-link {
+    text-decoration: none;
+  }
+
+  .name {
+    margin-right: auto;
+  }
+
+  label {
+    margin: 0;
+
+    svg {
+      display: block;
+    }
+  }
+
+  &:hover {
+    .logo-wrapper {
+      box-shadow: 0 0 0 3px map-get($colours, olive);
+    }
+  }
+
+  .social-networks-connected {
+    display: flex;
+
+    & > div{
+      margin: 0 5px;
+    }
+  }
+}

@@ -9,4 +9,6 @@ export default DS.Model.extend({
 
   telegram: DS.attr(),
   whatsup: DS.attr(),
+
+  categories: DS.hasMany('category'),
 });

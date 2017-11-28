@@ -1,11 +1,4 @@
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1.5rem 1rem;
-  justify-content: space-around;
-}
-
-.feature {
+& {
   margin: 0 1% 3rem;
   flex-grow: 1;
   flex-shrink: 0;

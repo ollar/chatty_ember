@@ -12,4 +12,12 @@ export default Component.extend({
       .slice(0,2)
       .join('');
   }),
+
+  didInsertElement() {
+    this.$().css({
+      height: this.attrs.size,
+      width: this.attrs.size,
+      lineHeight: this.attrs.size + 'px',
+    });
+  }
 });

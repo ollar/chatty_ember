@@ -9,7 +9,7 @@ $sizes_list: (12, 18, 14, 8, 16);
   width: 100%;
 }
 
-.board {
+& {
   display: flex;
   align-items: center;
   height: 18rem;

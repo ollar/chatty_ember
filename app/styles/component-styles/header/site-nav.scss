@@ -1,19 +1,4 @@
-.header {
-  .logo {
-    font-size: 2rem;
-
-    a {
-      text-decoration: none;
-    }
-
-    @include sm() {
-      font-size: 3rem;
-    }
-  }
-
-}
-
-.navigation {
+& {
   .menu {
     margin: 0;
     padding: 0;

@@ -1,6 +1,6 @@
 {{#if data.logo}}
   <img srcset="{{data.logo}} 1x, {{data.logo}} 1.5x, {{data.logo}} 2x"
-      src={{data.logo}} width="50" height="50" alt="bot image">
+      src={{data.logo}} width={{size}} height={{size}} alt="bot image">
 {{else}}
   {{initials}}
 {{/if}}

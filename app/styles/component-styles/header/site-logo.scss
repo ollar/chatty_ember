@@ -1,0 +1,11 @@
+& {
+  font-size: 2rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  @include sm() {
+    font-size: 3rem;
+  }
+}
