@@ -1,5 +1,5 @@
 import { Model, belongsTo } from 'ember-cli-mirage';
 
 export default Model.extend({
-  bot: belongsTo('bot'),
+  bot: belongsTo({inverse: null}),
 });

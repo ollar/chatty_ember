@@ -10,5 +10,5 @@ export default DS.Model.extend({
   telegram: DS.attr(),
   whatsup: DS.attr(),
 
-  categories: DS.hasMany('category'),
+  categories: DS.hasMany('category', {inverse: 'bot'}),
 });

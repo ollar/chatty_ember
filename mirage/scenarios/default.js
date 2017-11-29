@@ -7,7 +7,6 @@ export default function(server) {
 
   // server.createList('post', 10);
 
-
   server.createList('bot', 10);
-  server.createList('category', 100);
+  server.createList('category', 10);
 }
