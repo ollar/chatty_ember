@@ -22,4 +22,8 @@ export default Factory.extend({
   whatsup() {
     return faker.random.boolean();
   },
+
+  afterCreate(bot, server) {
+    server.createList('category', 10, { bot });
+  },
 });

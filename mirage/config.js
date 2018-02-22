@@ -26,7 +26,8 @@ export default function() {
 
 
   this.get('/bots');
-  this.get('/bots/:id');
+  // this.get('/bots/:id');
   this.get('/categories');
-  this.get('/categories/:id');
+  // this.get('/categories/:id');
+  // this.get('/cats/:id');
 }

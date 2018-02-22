@@ -15,9 +15,9 @@ export default Component.extend({
 
   didInsertElement() {
     this.$().css({
-      height: this.attrs.size,
-      width: this.attrs.size,
-      lineHeight: this.attrs.size + 'px',
+      height: this._size,
+      width: this._size,
+      lineHeight: this._size + 'px',
     });
   }
 });

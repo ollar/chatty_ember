@@ -4,5 +4,5 @@ export default DS.Model.extend({
   pattern: DS.attr('string'),
   template: DS.attr('string'),
 
-  bot: DS.belongsTo('bot', {inverse: 'category'})
+  bot: DS.belongsTo(),
 });
